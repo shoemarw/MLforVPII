@@ -1,0 +1,1 @@
+This folder contains output data (performance on datasets etc.) for hyperparameter tuning and old experiments

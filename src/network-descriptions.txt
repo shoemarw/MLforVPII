@@ -1,0 +1,27 @@
+/************************/
+/* Network Descriptions */
+/************************/
+
+/*************/
+/*  dnns.py  */
+/*************/
+Uses the pc and effective address (associated with the load op whose value we seek to 
+predict), previous 4 load values, and the previous 2 store values to predict the load
+value. Each of the previous 64 bit values are split into two 32 bit values and are 
+used to predict the two 32bit values which comprise the load value.
+
+/*************/
+/*  dnns2.py */
+/*************/
+Uses the pc and  effective address (associated with the load op whose value we seek to 
+predict), effective address and the values of the previous 4 loads, along
+with the effective address and the values of the previous 2 store values to
+predict the load value. Each 64 bit value is split into two 32 bit values. 
+
+/*************/
+/*  dnns3.py */
+/*************/
+Uses the pc and  effective address (associated with the load op whose value we seek to 
+predict), the pc and effective address and the values of the previous 4 loads, along
+with the pc and effective address and the values of the previous 2 store values to
+predict the load value. Each 64 bit value is split into four 16 bit values. 
